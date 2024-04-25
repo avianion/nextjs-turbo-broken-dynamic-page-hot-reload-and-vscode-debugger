@@ -14,8 +14,11 @@
       "sourceMaps": true,
       "cwd": "${workspaceFolder}",
       "port": 9230,
+      "autoAttachChildProcesses": false,
       "sourceMapPathOverrides": {
-        "/turbopack/[project]/*": "${webRoot}/nextjs/*"
+        "file:///app/*": "${workspaceFolder}/*",
+        "/app/*": "${workspaceFolder}/*",
+        "/turbopack/[project]/*": "${workspaceFolder}/nextjs/*"
       }
     }
   ]

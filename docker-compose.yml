@@ -23,5 +23,5 @@ services:
     restart: always
     environment:
       # - VIRTUAL_HOST=localhost
-      - VIRTUAL_PORT=3000
-      - NODE_OPTIONS=--inspect
+      # - VIRTUAL_PORT=3000
+      - "NODE_OPTIONS=--inspect=0.0.0.0:9229"

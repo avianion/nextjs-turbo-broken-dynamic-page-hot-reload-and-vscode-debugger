@@ -16,9 +16,11 @@
       "port": 9230,
       "autoAttachChildProcesses": false,
       "sourceMapPathOverrides": {
-        "file:///app/*": "${workspaceFolder}/*",
-        "/app/*": "${workspaceFolder}/*",
-        "/turbopack/[project]/*": "${workspaceFolder}/nextjs/*"
+        "meteor://💻app/*": "${workspaceFolder}/*",
+        "webpack:///./~/*": "${workspaceFolder}/node_modules/*",
+        "webpack://?:*/*": "${workspaceFolder}/*",
+        "/turbopack/[project]/*": "${workspaceFolder}/nextjs/*",
+        "turbopack://[project]/*": "${workspaceFolder}/nextjs/*"
       }
     }
   ]

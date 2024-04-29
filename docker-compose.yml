@@ -17,8 +17,8 @@ services:
       - "3000:3000"
       - "9230:9230"
       - "9229:9229"
-    # volumes:
-    #   - ./nextjs/.next/:/app/nextjs/.next/:z
+    volumes:
+      - ./nextjs/.next/:/app/nextjs/.next/:z
     command: npm run dev
     restart: always
     environment:
